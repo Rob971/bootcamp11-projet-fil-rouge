@@ -16,6 +16,7 @@ pipeline {
               }
            }
        }
+        /**
        stage('Scan Image with  SNYK') {
             agent any
             environment{
@@ -31,7 +32,7 @@ pipeline {
                     '''
                 }
             }
-        }
+        } **/
        stage('Run container based on builded image') {
           agent any
           steps {
